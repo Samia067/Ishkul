@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@color/GreenishBlack">
+
+    <RelativeLayout
+        android:id="@+id/teacher_status_pane"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.40" 
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/teacher_notification_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Farzia Afroze requested to join CSE 308"
+            android:textColor="@color/cream"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/teacher_notification_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teacher_notification_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="right"
+            android:text="Date "
+            android:textColor="@color/BoardGreen"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_pane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.40"
+        android:orientation="vertical" 
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:id="@+id/accpet_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept" />
+
+        <Button
+            android:id="@+id/reject_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reject" />
+    </LinearLayout>
+
+</RelativeLayout>

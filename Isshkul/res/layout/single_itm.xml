@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/deepGreen" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical">
+        <TextView
+	        android:id="@+id/task_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="6px"
+        	android:layout_marginRight="10px"
+        	android:layout_marginTop="6px"
+        	android:visibility="visible"
+	        android:text="Task"
+	        android:textSize="20sp" />
+    
+	    <TextView
+	        android:id="@+id/due_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Date"
+	        android:visibility="visible"
+	        android:layout_alignParentRight="true"
+	        android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout> 

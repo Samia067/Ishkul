@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+		android:layout_margin="1dp"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:background="@color/GreenishBlack"
+        android:orientation="vertical" >
+
+        <TextView
+	        android:id="@+id/teacher_course_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:textSize="20dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_margin="10dp"
+	        android:text="Course Number"
+	        android:textColor="@color/cream" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

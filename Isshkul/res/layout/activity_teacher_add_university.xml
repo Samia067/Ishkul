@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GreenishBlack"
+    tools:context=".AddUniversityActivity" >
+    
+  	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">    
+	    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+         	<TextView
+	            android:id="@+id/university_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="University Name :"
+	            android:textColor="@color/cream"
+	            android:layout_margin="5dp"
+	            android:textStyle="bold"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+         	<EditText
+		        android:id="@+id/uniName"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:layout_below="@id/university_name"
+		        android:layout_centerHorizontal="true"
+		        android:ems="10" />
+         	<TextView
+	            android:id="@+id/post_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Post :"
+	            android:textColor="@color/cream"
+	            android:layout_margin="5dp"
+	            android:textStyle="bold"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         	<Spinner
+         	    android:id="@+id/post_spinner"
+         	    android:layout_width="match_parent"
+         	    android:layout_height="wrap_content" 
+         	    android:layout_margin="5dp"/>
+         	<TextView
+	            android:id="@+id/course_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Courses :"
+	            android:layout_margin="5dp"
+	            android:textColor="@color/cream"
+	            android:textStyle="bold"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	         	<EditText
+			        android:id="@+id/edit_course"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:layout_below="@id/course_name"
+			        android:layout_centerHorizontal="true"
+			        android:ems="10"
+			        android:imeOptions="actionSend" />
+         	<Button
+			        android:id="@+id/addUniButton"
+			        android:layout_width="100dp"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true"
+			        android:layout_gravity="center_horizontal"
+			        android:layout_marginTop="100dp"
+			        android:background="@drawable/button_click"
+			        android:textColor="@color/deepGreen"
+			        android:padding="10dp"
+			        android:text="Done" />
+       </LinearLayout>
+    </LinearLayout>
+</ScrollView>

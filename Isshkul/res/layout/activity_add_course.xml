@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@color/GreenishBlack"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddTaskActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	
+	    <LinearLayout
+	        android:id="@+id/universityPane"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:id="@+id/universityLabel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/coursePane"
+	            android:layout_alignTop="@+id/instituteSpinner"
+	            android:text="Institution :"
+	            android:textSize="18dp"
+	            android:textColor="@color/cream"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	        <Spinner
+	            android:id="@+id/uniSpinner"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:layout_toRightOf="@id/universityLabel" />
+	    </LinearLayout>
+	    <TextView
+	        android:id="@+id/courseNumberLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Course Number :"
+	        android:textSize="18dp"
+	        android:textColor="@color/cream"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/courseNumber"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/coursePane"
+	        android:layout_centerHorizontal="true"
+	        android:ems="10" />
+	    <TextView
+	        android:id="@+id/courseNameDescription"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Course Name :"
+	        android:textSize="18dp"
+	        android:textColor="@color/cream"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/courseName"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/datePicker2"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/courseNameDescription"
+	        android:ems="10"
+	        android:inputType="textMultiLine" />
+	    
+	    <TextView
+	        android:id="@+id/startDateLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/descriptionLabel"
+	        android:text="Start Date :"
+	        android:textSize="18dp"
+	        android:textColor="@color/cream"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+		<DatePicker
+		        android:id="@+id/datePicker2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:background="@color/deepGreen"
+		        android:layout_margin="10dp"
+		        android:layout_gravity="center"
+		        android:calendarViewShown="false"/>
+	
+	    <Button
+	        android:id="@+id/addCourseButton"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="20dp"
+	        android:background="@drawable/button_click"
+	        android:textColor="@color/deepGreen"
+	        android:padding="10dp"
+	        android:text="Add" />
+	
+	    
+	</LinearLayout>
+</ScrollView>

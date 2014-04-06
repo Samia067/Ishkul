@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deepGreen">#002A00</color>
+    <color name="cream">#FFFFAA</color>
+    <color name="lightSkyBlue">#AAFFFF</color>
+    <color name="indigo">#4B0082</color>
+    <color name="blueShark">#6996AD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_divider">#272727</color>
+    <color name="list_item_title">#fff</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="list_background">#421001</color>
+    <color name="list_background_pressed">#280b03</color>
+    <color name="darkTurquoise">#005555</color>
+    <color name="GreenishBlack">#0A190A</color>
+    <color name="lightPink">#FFD4D4</color>
+    <color name="lightYellowGreen">#D4FFAA</color>
+    <color name="BoardGreen">#336550</color>
+    <color name="lightBoardGreen">#55bd92</color>
+    <color name="background">#fdffe6</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    
+    
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.isshkul"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.example.isshkul.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.isshkul.LogInActivity"
+            android:label="@string/title_activity_log_in"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.isshkul.TeacherHomeActivity"
+            android:label="@string/title_activity_teacher_home"
+            android:theme="@style/CustomActionBarTheme" >
+            
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.StudentHomeActivity"
+            android:label="@string/title_activity_student_home"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.isshkul.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="com.example.isshkul.AddCourseActivity"
+            android:label="Add Course"
+            android:parentActivityName="com.example.isshkul.TeacherHomeActivity"
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.isshkul.TeacherHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.isshkul.AddTaskActivity"
+            android:label="@string/title_activity_add_task"
+            android:parentActivityName="com.example.isshkul.TeacherHomeActivity"
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.isshkul.TeacherHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.isshkul.TaskActivity"
+            android:label="@string/title_activity_task"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="com.example.isshkul.TeacherCourseDetailActivity"
+            android:label="@string/title_activity_teacher_course_detail"
+            android:parentActivityName="com.example.isshkul.TeacherHomeActivity"
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.isshkul.TeacherHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.isshkul.TeacherTaskDetailsActivity"
+            android:label="Assignment : ERD"
+            android:parentActivityName="com.example.isshkul.TeacherHomeActivity"
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.isshkul.TeacherHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.isshkul.AddUniversityActivity"
+            android:label="@string/title_activity_add_university"
+            android:parentActivityName="com.example.isshkul.TeacherHomeActivity"
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.isshkul.TeacherHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.StudentTaskActivity"
+            android:label="@string/title_activity_student_task"
+            android:parentActivityName="com.example.ishkul.student.StudentHomeActivity"
+            android:theme="@style/CustomActionBarTheme" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ishkul.student.StudentHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.StudentEnrollActivity"
+            android:label="@string/title_activity_student_enroll"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.StudentRequestsActivity"
+            android:label="@string/title_activity_student_requests"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.StudentDropCourseActivity"
+            android:label="@string/title_activity_student_drop_course"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.isshkul.TeacherDropCourseActivity"
+            android:label="@string/title_activity_teacher_drop_course"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.isshkul.TeacherNotificationsActivity"
+            android:label="@string/title_activity_teacher_notification"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.StudentNotificationsActivity"
+            android:label="@string/title_activity_student_notification"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.ishkul.student.StudentSettingsActivity"
+            android:label="@string/title_activity_student_settings" >
+        </activity>
+        <activity
+            android:name="com.example.isshkul.TeacherSettingsActivity"
+            android:label="@string/title_activity_teacher_settings" >
+        </activity>
+    </application>
+
+</manifest>

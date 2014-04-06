@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/std_profile_pane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/std_personal_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/std_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/std_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/std_image"
+            android:text="Farzana Ahmed"
+            android:textColor="@color/GreenishBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/std_uni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/std_name"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/std_image"
+            android:text="Institution : BUET"
+            android:textColor="@color/GreenishBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/std_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/std_uni"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/std_image"
+            android:text="ID: 1005089"
+            android:textColor="@color/GreenishBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/std_profile_edit_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/std_name"
+            android:layout_margin="3dp"
+            android:src="@drawable/ic_action_edit" />
+    </RelativeLayout>
+	
+    <LinearLayout 
+        android:id="@+id/std_profile_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@color/deepGreen">
+
+        <TextView
+            android:id="@+id/task_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks"
+            android:layout_marginLeft="130dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/std_course_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tot_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Total : 25"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/deepGreen"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/active_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tot_tasks"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Active : 10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/deepGreen"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/view_task"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/active_tasks"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/button_click"
+            android:text="View All"
+            android:textColor="@color/GreenishBlack" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/std_profile_course" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5dp" 
+        android:background="@color/deepGreen" 
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/course_info" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="130dp" 
+            android:text="Courses" 
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textStyle="bold"/>
+        
+    </LinearLayout>
+    
+    <RelativeLayout android:id="@+id/std_course_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tot_corses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Total : 5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/deepGreen"
+            android:textStyle="bold" />
+
+        <Button android:id="@+id/course1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tot_corses" android:background="@android:color/transparent" android:padding="3dp" android:text="307" android:textColor="@color/BoardGreen" android:textStyle="bold"/>
+        <Button android:id="@+id/course2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tot_corses" android:layout_toRightOf="@id/course1" android:background="@android:color/transparent" android:padding="3dp" android:text="311" android:textColor="@color/BoardGreen" android:textStyle="bold"/>
+        <Button android:id="@+id/course3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tot_corses" android:layout_toRightOf="@id/course2" android:background="@android:color/transparent" android:padding="3dp" android:text="309" android:textColor="@color/BoardGreen" android:textStyle="bold"/>
+        <Button 
+            android:id="@+id/add_course_button" 
+            android:layout_width="80dp" 
+            android:layout_height="40dp" 
+            android:layout_below="@id/course1" 
+            android:layout_marginLeft="130dp" 
+            android:background="@drawable/button_click" 
+            android:text="Add" 
+            android:textColor="@color/GreenishBlack"/>
+    </RelativeLayout>
+
+</LinearLayout>

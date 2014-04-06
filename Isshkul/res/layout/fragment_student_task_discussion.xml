@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/discussionPane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/background" 
+    android:orientation = "vertical">
+	
+	<ListView
+            android:id="@+id/student_task_discussion_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/selfCommentPane"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GreenishBlack"
+        android:padding="10dp">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/commentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buttonPane"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/buttonPane"
+            android:ems="10"
+            android:text=""
+            android:textColor="@color/GreenishBlack" 
+            android:background="@android:color/white"/>
+
+        <LinearLayout
+            android:id="@+id/buttonPane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_send_now" />
+
+            <ImageButton
+                android:id="@+id/attachmentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_send_attachment" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

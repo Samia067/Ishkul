@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ishkul</string>
+    <string name="title_activity_teacher_home">Home</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="keepLoggedIn">Remember me</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="teacher_student_alert_text">Specify if you are.</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="Home">Home</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="action_websearch">Web search</string>
+    <string name="action_search">Search</string>
+    <string name="action_add_task">Add new task</string>
+
+    <!-- Nav Drawer -->
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Menu </item>
+        <item>Add University</item>
+        <item>Add Course</item>
+        <item>Add Task</item>
+        <item>Drop Course</item>
+        <item>Settings</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item></item>
+        <item>@drawable/ic_menu_add</item>
+        <item>@drawable/ic_menu_add_course</item>
+        <item>@drawable/ic_menu_add_task</item>
+        <item>@drawable/ic_menu_delete</item>
+        <item>@drawable/ic_menu_setting</item>
+        <item>@drawable/ic_menu_logout</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_student_home">Home</string>
+    <string name="title_activity_add_course">AddCourseActivity</string>
+    <string name="title_activity_add_task">Add Task</string>
+    <string name="title_activity_student_requests">Requests</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="task_types">
+        <item>Assignment</item>
+        <item>Test</item>
+        <item>Announcement</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="title_activity_task">Tasks</string>
+    <string name="title_activity_teacher_profile">Teacher_profile</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <!-- Student Nav Drawer Menu Items -->
+    <string-array name="std_nav_drawer_items">
+        <item>Enroll</item>
+        <item>Requests</item>
+        <item>Drop Course</item>
+        <item>Settings</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <!-- Std Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="std_nav_drawer_icons">
+        <item>@drawable/ic_menu_add_course</item>
+        <item>@drawable/ic_menu_requests</item>
+        <item>@drawable/ic_menu_delete</item>
+        <item>@drawable/ic_menu_setting</item>
+        <item>@drawable/ic_menu_logout</item>
+    </array>
+
+    <!-- Spinner Array For Teacher Post -->
+    <string-array name="posts_array">
+        <item>Lecturer</item>
+        <item>Assistent Professor</item>
+        <item>Professor</item>
+    </string-array>
+    <string-array name="uni_array">
+        <item>BUET</item>
+        <item>AIUB</item>
+        <item>NSU</item>
+    </string-array>
+
+    <string name="title_activity_student_profile_fragment">Student_profile_fragment</string>
+    <string name="title_activity_student_task_fragment">StudentTaskFragment</string>
+    <string name="title_activity_teacher_course_detail">CSE 308</string>
+    <string name="title_activity_teacher_course_tasks_fragment">TeacherCourseTasksFragment</string>
+    <string name="title_activity_teacher_task_details">Teacher Task DetailsActivity</string>
+    <string name="title_activity_add_university">Add University</string>
+    <string name="title_activity_student_task">Assignment : ERD</string>
+    <string name="title_activity_student_enroll">StudentEnrollActivity</string>
+    <string name="title_activity_student_drop_course">Drop Course</string>
+    <string name="title_activity_teacher_drop_course">Drop Course</string>
+    <string name="title_activity_teacher_notification">Notifications</string>
+    <string name="title_activity_student_notification">Notifications</string>
+    <string name="title_activity_student_settings">Settings</string>
+    <string name="title_activity_teacher_settings">Settings</string>
+
+</resources>

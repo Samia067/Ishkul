@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/coverPane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:id="@+id/resultPane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageAvatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/default_avatar" />
+
+                <RelativeLayout
+                    android:id="@+id/name_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.89" 
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    
+                    <TextView
+                        android:id="@+id/student_enroll_date_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/student_enroll_date_textview"
+                        android:layout_alignParentLeft="true"
+                        android:text="Date created"
+                        android:textColor="@color/BoardGreen" />
+                    
+                    <TextView
+                        android:id="@+id/student_enroll_courseName_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="name"
+                        android:layout_below="@id/student_enroll_date_textview"
+                        android:textColor="@color/GreenishBlack"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/student_enroll_status_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Active" />
+                    
+                    <TextView
+                        android:id="@+id/student_enroll_courseno_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/student_enroll_courseName_textview"
+                        android:text="Couse Number"
+                        android:textColor="@color/GreenishBlack" />
+
+                    <TextView
+                        android:id="@+id/student_enroll_lengthInWeeksTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/student_enroll_courseno_textview"
+                        android:layout_alignParentLeft="true"
+                        android:text="LengthInWeeks"
+                        android:textColor="@color/BoardGreen" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/student_enroll_teacherTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Teacher: "
+            android:textColor="@color/BoardGreen" />
+    </LinearLayout>
+
+</RelativeLayout>
