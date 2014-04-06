@@ -20,10 +20,10 @@ public class SplashActivity extends Activity {
 		setContentView(R.layout.activity_splash);
 		
 		//db code
-		DataBaseHelper helper = new DataBaseHelper(this);
-		helper.createDataBase();
-		helper.openDataBase();
-		helper.close();
+//		DataBaseHelper helper = new DataBaseHelper(this);
+//		helper.createDataBase();
+//		helper.openDataBase();
+//		helper.close();
 		
 		new Handler().postDelayed(new Runnable() {
 			 

@@ -25,15 +25,15 @@ public class SignUpActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Log.i(TAG, "after super");
+		//Log.i(TAG, "after super");
 
 		setContentView(R.layout.activity_sign_up);
 		
 		//to navigate back to studentHomeActivity
-		ActionBar actionBar = getActionBar();
-	    actionBar.setDisplayHomeAsUpEnabled(true);
-	    
-		
+//		ActionBar actionBar = getActionBar();
+//	    actionBar.setDisplayHomeAsUpEnabled(true);
+//	    
+//		
 		teacherRadioButton = (RadioButton) findViewById(R.id.teacherRadioButton);
 		studentRadioButton = (RadioButton) findViewById(R.id.studentRadioButton);
 		studentId = (EditText) findViewById(R.id.studentID);
